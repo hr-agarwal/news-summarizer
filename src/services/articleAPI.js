@@ -1,8 +1,8 @@
-// src/services/articleAPI.js
+const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
 export const saveArticleToDB = async (articleData) => {
   try {
-    const res = await fetch('http://localhost:5000/api/articles', {
+    const res = await fetch(`${BASE_URL}/api/articles`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
