@@ -1,0 +1,105 @@
+.detailContainer {
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.backButton {
+  background-color: #1e40af; /* Indigo */
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+
+.backButton:hover {
+  text-decoration: #1e3a8a;
+}
+
+/* 🌟 NEW: Background blur & dark overlay for text block */
+.detailContent {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.content {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.readMore {
+  color: #60a5fa;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+
+/* 🧠 Summarization Section */
+.summarizeBtn,
+.saveBtn {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.summarizeBtn:hover,
+.saveBtn:hover {
+  background-color: #4f46e5;
+}
+
+/* 📝 Summary Box */
+.summaryBox {
+  margin-top: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.summaryText {
+  white-space: pre-wrap;
+  font-size: 1rem;
+  line-height: 1.5;
+}

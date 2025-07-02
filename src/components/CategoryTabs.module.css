@@ -1,0 +1,33 @@
+/* ✅ CategoryTabs.module.css - Light-only clean buttons */
+
+.tabContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background-color: transparent;
+}
+
+.tab {
+  padding: 0.6rem 1.4rem;
+  font-weight: 500;
+  border-radius: 999px;
+  border: 2px solid #3b82f6;
+  background-color: black;
+  color: whitesmoke;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tab:hover {
+  background-color: rgba(8, 238, 131, 0.15);
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+}
+
+.active {
+  background-color: #3b82f6;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.5);
+  transform: scale(1.03);
+}

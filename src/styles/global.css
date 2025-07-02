@@ -1,0 +1,60 @@
+/* ✅ global.css — Final light-only layout with separate background image */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url('/src/assets/manolo-chretien-RpC-9e0ORNM-unsplash.jpg'); /* or your correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: #1c1c1c;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input, button {
+  font-family: inherit;
+  transition: 0.3s ease;
+}
+
+input[type="text"] {
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #1c1c1c;
+}
+
+button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2563eb;
+}

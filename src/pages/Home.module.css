@@ -1,0 +1,40 @@
+.home {
+  padding: 1rem 2rem;
+  min-height: 100vh;
+}
+
+.message {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+
+  /* Optional: add contrast + blur on top of bg image */
+  background-color: rgba(0, 0, 0, 0.4); /* for better readability in dark mode */
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+
+  /* Center it if you want */
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Updated responsive layout for article cards */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.messageWrapper {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
