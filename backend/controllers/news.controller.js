@@ -4,7 +4,7 @@ import axios from 'axios';
 export const getTopHeadlines = async (req, res) => {
   try {
     const category = req.query.category || 'general';
-    const apiKey = process.env.NEWS_API_KEY;
+    const apiKey = process.env.VITE_NEWS_API_KEY;
 
     const response = await axios.get('https://newsapi.org/v2/top-headlines', {
       params: {
