@@ -5,7 +5,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import connectDB from './db.js';
 import summarizeRoutes from './routes/summarize.routes.js';
-import SavedArticle from './models/savedArticle.model.js'; 
+import newsRoutes from './routes/news.routes.js'; // ✅ Add this line
+import SavedArticle from './models/savedArticle.model.js';
 
 dotenv.config();
 const app = express();
@@ -20,8 +21,9 @@ app.use(express.json());
 
 // Routes
 app.use('/api/summarize', summarizeRoutes);
+app.use('/api/news', newsRoutes); // ✅ Register the news route
 
-// ✅ MongoDB test route
+// MongoDB test route
 app.get('/test-mongo', async (req, res) => {
   try {
     const test = await SavedArticle.create({
@@ -49,5 +51,3 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`✅ Server running on http://localhost:${PORT}`);
 });
-
-
