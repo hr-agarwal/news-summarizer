@@ -25,11 +25,11 @@
 /* Updated responsive layout for article cards */
 .cardGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  align-items: start; /* 🔥 prevents stretch */
 }
+
 
 .messageWrapper {
   height: 60vh;

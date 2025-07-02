@@ -5,13 +5,14 @@ const ArticleCard = ({ article, onClick }) => {
   return (
     <div className={styles.card} onClick={() => onClick(article)}>
     <img
-  src={article.urlToImage}
+  src={article.urlToImage || 'https://via.placeholder.com/400x200?text=No+Image'}
   alt={article.title}
-  className={styles.image}
+  className={styles.thumbnail}
   onError={(e) => {
     e.target.src = 'https://via.placeholder.com/400x200?text=No+Image';
   }}
 />
+
 
 
       <div className={styles.content}>
