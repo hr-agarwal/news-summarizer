@@ -6,7 +6,7 @@ export const getTopHeadlines = async (req, res) => {
     const category = req.query.category || 'general';
     const apiKey = process.env.NEWS_API_KEY;
 
-    const response = await axios.get('https://gnews.io/api/v4/top-headlines?token=YOUR_KEY&lang=en&country=us', {
+    const response = await axios.get('https://newsapi.org/v2/top-headlines', {
       params: {
         country: 'in',
         category,
